@@ -1,0 +1,22 @@
+include news-data.pug
+
+section.news
+    .l-default 
+        .news__items
+            each news_item in news
+                a.news__item(href="")
+                    .news__item-top
+                        .news__item-icon
+                            +svgColor('date')
+                        .news__item-date= news_item.date
+                    .news__item-title!= news_item.title
+                    .news__item-text!= news_item.text
+    .news__pagination
+        .l-default
+            .news__pagination-wrapper.pagination
+                .pagination-arrow.pagination-arrow-prev.disabled
+                    +svgMono('arrow')
+                .pagination-number.active 1
+                .pagination-number 2
+                .pagination-arrow.pagination-arrow-next
+                    +svgMono('arrow')

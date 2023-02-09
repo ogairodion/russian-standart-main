@@ -1,0 +1,12 @@
+include news-data.pug
+
+section.news-more
+    .l-default 
+        h2.news-more__title.title.title--h2 Еще новости:
+        .news-more__items
+            each news_more_item in news_more
+                .news-more__item
+                    .news-more__item-date= news_more_item.date
+                    .news-more__item-title= news_more_item.title
+                    .news-more__item-text= news_more_item.text
+                    a.news-more__item-btn.btn.btn--green(href=news_more_item.href) Читать

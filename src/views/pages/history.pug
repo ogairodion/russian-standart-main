@@ -1,0 +1,23 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = ""
+
+block content
+      include ../../blocks/modules/loader/loader.pug
+      include ../../blocks/modules/header/header.pug
+      main.main
+        include ../../blocks/modules/history/history-top.pug
+        .l-default.section__wrapper
+          .section__content 
+            include ../../blocks/modules/history/history.pug
+          .section__sidebar
+            include ../../blocks/modules/history/history-sidebar.pug
+        include ../../blocks/modules/horizontal-form/horizontal-form.pug
+        include ../../blocks/modules/info/info-more.pug
+      include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

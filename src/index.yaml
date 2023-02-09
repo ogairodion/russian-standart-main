@@ -1,0 +1,27 @@
+ProjectTitle: ProjectName
+
+PageList:
+  - file: homepage.html
+    ready: 100
+  - file: about.html
+    ready: 100
+  - file: news.html
+    ready: 100
+  - file: faq.html
+    ready: 100
+  - file: contacts.html
+    ready: 100  
+  - file: history.html
+    ready: 100  
+  - file: news-detail.html
+    ready: 100  
+  - file: manager.html
+    ready: 100  
+  - file: partners.html
+    ready: 100  
+  - file: 404.html
+    ready: 100
+  - file: authorization.html
+    ready: 100    
+  - file: registration.html
+    ready: 100    

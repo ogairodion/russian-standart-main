@@ -1,0 +1,40 @@
+include menu-data.pug 
+
+nav.menu
+    .menu__items
+        each menu_item in menu
+            .menu__item
+                a.menu__item-text(href=menu_item.href)= menu_item.text
+                .menu__item-arrow
+                    +svgMono('dropdown-arrow')
+                - if (menu_item.submenu)
+                    .menu__item-submenu.submenu
+                        each submenu in menu_item.submenu
+                            each submenu_item in submenu.items
+                                .submenu__item
+                                    .submenu__top
+                                        a.submenu__title(href=submenu_item.title.href)= submenu_item.title.text
+                                    .submenu__content
+                                        .submenu__content-column
+                                            each submenu_list_1 in submenu_item.column_1.list
+                                                .submenu__content-list
+                                                    - if (submenu_list_1.title)
+                                                        a.submenu__content-title(href="")= submenu_list_1.title.text
+                                                    - if (submenu_list_1.items)
+                                                        each submenu_list_1_item in submenu_list_1.items 
+                                                            a.submenu__content-item(href=submenu_list_1_item.href)= submenu_list_1_item.text
+                                        - if (submenu_item.column_2)
+                                            .submenu__content-column
+                                                each submenu_list_2 in submenu_item.column_2.list
+                                                    .submenu__content-list
+                                                        - if (submenu_list_2.title)
+                                                            a.submenu__content-title(href="")= submenu_list_2.title.text
+                                                        - if (submenu_list_2.items)
+                                                            each submenu_list_2_item in submenu_list_2.items 
+                                                                a.submenu__content-item(href=submenu_list_2_item.href)= submenu_list_2_item.text
+        .menu__search
+            form(action="POST")
+                .menu__search-input
+                    input(type="text" placeholder="Поиск")
+                button.menu__search-icon(type="submit") 
+                    +svgMono('search')

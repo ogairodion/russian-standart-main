@@ -1,0 +1,67 @@
+section.contacts
+    .l-default 
+        .contacts__info
+            h1.contacts__title.title.title--h1 Контакты
+            .contacts__wrapper
+                .contacts__info-title ООО «Кредитное бюро Русский Стандарт»
+                .switches
+                    .switches-after
+                    .switch.active(data-switch="address") 
+                        .switch-text Адреса и телефоны
+                    .switch(data-switch="rek") 
+                        .switch-text Реквизиты
+                .contacts__items
+                    .contacts__item(data-switch="address")
+                        .contacts__address
+                            .contacts__address-item
+                                .contacts__address-icon
+                                    +svgMono('map')
+                                .contacts__address-text 105318, Москва, Семеновская площадь, дом 7, корпус 1
+                            .contacts__address-item
+                                .contacts__address-icon
+                                    +svgMono('phone-icon')
+                                a.contacts__address-phone(href="tel:+74956096424") +7 (495) 609-64-24
+                            .contacts__address-item
+                                .contacts__address-icon
+                                    +svgMono('email')
+                                a.contacts__address-mail(href="mailto:rscb@rs-cb.ru") rscb@rs-cb.ru
+                        .contacts__item-content
+                            .contacts__item-title Время работы:
+                        .contacts__item-content
+                            .contacts__item-title Прием физических лиц:
+                            .contacts__item-text 105318, Москва, Семеновская площадь, дом 7, корпус 1
+                        .contacts__item-content
+                            .contacts__item-title Поддержка физических лиц:
+                            a.contacts__item-phone(href="tel:+74956096424p123") 8 (495) 609-64-24  
+                                span (доб. 123)
+                        .contacts__item-content
+                            .contacts__item-title Поддержка юридических лиц:
+                            a.contacts__item-phone(href="tel:+74956096424p115") 8 (495) 609-64-24
+                                span (доб. 115)
+                    .contacts__item(data-switch="rek")  
+                        .contacts__item-content
+                            .contacts__item-title Полное наименование:
+                            .contacts__item-text Общество с ограниченной ответственностью «Кредитное бюро Русский Стандарт»
+                        .contacts__item-content
+                            .contacts__item-title Краткое наименование:
+                            .contacts__item-text ООО «Кредитное бюро Русский Стандарт»
+                        .contacts__item-content
+                            .contacts__item-title Дата регистрации:
+                            .contacts__item-text 09.08.2005
+                        .contacts__item-content
+                            .contacts__item-title ИНН/КПП:
+                            .contacts__item-text 7719562097/771901001
+                        .contacts__item-content
+                            .contacts__item-title ОГРН:
+                            .contacts__item-text 1057747734934
+                        .contacts__item-content
+                            .contacts__item-title ОКВЭД:
+                            .contacts__item-text 72.4, 74.84, 72.6, 91.1, 92.4
+                        .contacts__item-content
+                            .contacts__item-title Банковские реквизиты:
+                            .contacts__item-text Р/c — 40702810700000001140 АО «Банк Русский Стандарт» Москва <br>К/с — 30101810845250000151 БИК 044525151 
+                        .contacts__item-content
+                            .contacts__item-title Юридический и почтовый адрес:
+                            .contacts__item-text 105318, г. Москва, Семеновская площадь, д. 7, корпус 1
+    .map
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe784ce71af8b5c8cc07437726495b6ff7735144e238dc4733e4f23b3d0fe855&amp;source=constructor" width="100%" frameborder="0"></iframe>

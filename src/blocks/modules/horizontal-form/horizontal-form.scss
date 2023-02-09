@@ -1,0 +1,16 @@
+.horizontal-form {
+    background: linear-gradient(90deg, rgba(238,238,250,1) 0%, rgba(238,238,250,1) 100%);
+    padding: 83px 0 121px;
+
+    @media screen and (max-width: 1199px) {
+        padding: 30px 0;
+    }
+
+    &__title {
+        margin-bottom: 43px;
+        
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+    }
+}

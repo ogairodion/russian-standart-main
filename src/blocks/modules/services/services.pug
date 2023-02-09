@@ -1,0 +1,13 @@
+include services-data.pug 
+
+section.services
+    .l-default
+        h2.services__title.title.title--h2 Наши сервисы
+        .services__items
+            each service_item in services
+                .services__item
+                    .services__item-title= service_item.title
+                    .services__item-subtitle= service_item.subtitle
+                    a.services__item-btn.btn.btn--green(href=service_item.href)= service_item.btnText
+                    .services__item-img
+                        +webp(['services/' + service_item.img], 'png')

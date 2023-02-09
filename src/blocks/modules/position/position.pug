@@ -1,0 +1,11 @@
+include position-data.pug
+section.position
+    h2.position__title.title.title--h2 Наша позиция и преимущество на рынке
+    .position__items
+        each position in positions
+            .position__item
+                .position__item-title= position.title
+                .position__item-wrapper
+                    .position__item-icon
+                        img(src="img/svg/check.svg", alt="")
+                    .position__item-text= position.text

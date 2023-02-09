@@ -1,0 +1,74 @@
+.more {
+    background: linear-gradient(90deg, rgba(238,238,250,1) 0%, rgba(238,238,250,0.5242471988795518) 100%);
+    background-image: url('.././img/more-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 103px 0;
+
+    @media screen and (max-width: 1199px) {
+        padding: 30px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        max-width: 531px;
+        font-size: 28px;
+        line-height: 120%;
+        font-weight: 600;
+        margin-bottom: 42px;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: $green;
+        }
+    }
+
+    &__text {
+        max-width: 729px;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 56px;
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
+    }
+
+    &__img {
+        min-width: 370px;
+        margin-left: 30px;
+
+        @media screen and (max-width: 1199px) {
+            min-width: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__btn {
+        font-size: 18px;
+        line-height: 1;
+
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
+    }
+}

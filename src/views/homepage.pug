@@ -1,0 +1,21 @@
+extends layouts/default
+include helpers/_mixins
+
+block variables
+  - const title = ""
+
+block content
+      include ../blocks/modules/loader/loader.pug
+      include ../blocks/modules/header/header.pug
+      main.main
+        include ../blocks/modules/main-top/main-top.pug
+        include ../blocks/modules/services/services.pug
+        include ../blocks/modules/poster/poster.pug
+        include ../blocks/modules/info/info.pug
+        include ../blocks/modules/more/more.pug
+        include ../blocks/modules/news-all/news-all.pug
+      include ../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="js/vendor.js")
+  script(defer src="js/main.js")

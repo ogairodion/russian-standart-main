@@ -1,0 +1,22 @@
+header.header
+  .header__wrapper
+    .header__burger   
+      span 
+      span 
+    .header__logo
+      +svgColor('logo')
+    .header__phone
+      .header__phone-icon   
+        +svgColor('phone')
+      a.header__phone-link(href="+74956096424") 8 (495) 609-64-24
+    .header__acc
+      .header__acc-links
+        a.header__acc-name(href="") Вход
+        span &nbsp;/&nbsp;
+        a.header__acc-name(href="") Регистрация
+      .header__acc-logout
+        +svgMono('user')
+      .header__menu
+        .header__menu-item Для физических лиц
+        .header__menu-item Для корпоративных клиентов
+  include ../.././components/menu/menu.pug

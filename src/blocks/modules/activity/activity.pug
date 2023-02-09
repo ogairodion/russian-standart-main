@@ -1,0 +1,14 @@
+include activity-data.pug 
+
+section.activity
+    h2.activity__title.title.title--h2 Наша деятельность направлена
+    .activity__items
+        each activity_column in activities
+            .activity__column
+                each activity in activity_column.items
+                    .activity__item
+                        .activity__item-img
+                            +webp(['activity/' + activity.img], 'jpg', 'lazy')
+                        .activity__item-info
+                            .activity__item-title= activity.title
+                            .activity__item-text!= activity.text

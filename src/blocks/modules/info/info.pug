@@ -1,0 +1,12 @@
+include info-data.pug 
+
+section.info
+    .l-default 
+        h2.info__title.title.title--h2 Информация о услугах
+        .info__items
+            each info_item in info_items
+                a.info__item(href="") 
+                    .info__item-icon
+                        img.lazy(data-src="img/svg/" +  info_item.icon + ".svg", alt="")
+                    .info__item-title= info_item.title
+                    .info__item-text= info_item.text

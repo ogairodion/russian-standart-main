@@ -1,0 +1,17 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = ""
+
+block content
+      include ../../blocks/modules/loader/loader.pug
+      include ../../blocks/modules/header/header.pug
+      main.main
+        include ../../blocks/modules/faq/faq-top.pug
+        include ../../blocks/modules/faq/faq.pug
+      include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

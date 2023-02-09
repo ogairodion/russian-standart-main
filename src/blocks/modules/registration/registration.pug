@@ -1,0 +1,35 @@
+section.registration
+    .l-default  
+        .registration__wrapper
+            form.registration__form.form--login
+                .form__top
+                    .form__icon
+                        img(src="img/svg/enter.svg", alt="")
+                    .form__title Регистрация
+                .form__texts
+                    .form__texts-item Для доступа к сервисам личного кабинета после регистрации необходимо пройти процедуру удостоверения личности (идентификация)
+                    .form__texts-item Быстрый доступ в личный кабинет можно получить через <a href="">интернет-банк</a> АО «Банк Русский стандарт»
+                .form__body
+                    .form__inputs
+                        .form__inputs-row
+                            .form__input--rounded
+                                input(type="text" name="secondName" placeholder="Фамилия")
+                            .form__input--rounded
+                                input(type="text" name="name" placeholder="Имя")
+                        .form__inputs-row
+                            .form__input--rounded
+                                input(type="text" name="login" placeholder="Логин")
+                        .form__inputs-row
+                            .form__input--rounded
+                                input(type="password" name="password" placeholder="Пароль")
+                            .form__input--rounded
+                                input(type="password" name="passwordRepeat" placeholder="Подтвердите пароль")
+                    .form__bottom
+                        .form__checkbox
+                            input(type="checkbox" id="1")
+                            label.form__checkbox-label(for="1") Я принимаю <a href="">условия предоставления</a> услуги    
+                    .form__btns
+                        button.form__btn.btn.btn--green(type="submit") Войти
+                        a.form__btn.btn.btn--bordered-green(href="") Регистрация
+    .registration__img
+        +webp(['authorization/1'], 'png')

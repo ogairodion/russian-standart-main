@@ -1,0 +1,167 @@
+.news {
+    padding: 56px 0 72px;
+    @media screen and (max-width: 1199px) {
+        padding: 30px 0;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 8px;
+
+        @media screen and (max-width: 767px) {
+            margin: 0 0 8px;
+        }
+    }
+
+    &__item {
+        @include tr('all');
+        width: calc(50% - 30px);
+        box-shadow: 0px 1px 3px rgba(25, 30, 30, 0.08);
+        border-radius: 4px;
+        background: #fff;
+        padding: 40px 40px 48px;
+        margin: 0 15px 30px;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            padding: 20px;
+            margin: 0 0 20px;
+        }
+        &:hover {
+            opacity: .5;
+            box-shadow: 0px 1px 3px rgba(25, 30, 30, 0.25);
+        }
+
+        &-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-icon {
+            font-size: 21px;
+            line-height: 1;
+            margin-right: 16px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+
+        &-date {
+            font-size: 14px;
+            line-height: 120%;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #919497;
+
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+
+        &-title {
+            font-size: 20px;
+            line-height: 120%;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 24px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 120%;
+            color: #454644;
+
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-more {
+        padding: 60px 0 152px;
+        @media screen and (max-width: 1199px) {
+            padding: 30px 0;
+        }
+        &__title {
+            margin-bottom: 68px;
+
+            @media screen and (max-width: 1199px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+
+            @media screen and (max-width: 991px) {
+                margin: 0;
+            }
+        }
+
+        &__item {
+            @include tr('all');
+            display: flex;
+            flex-direction: column;
+            width: calc(33.3333% - 30px);
+            box-shadow: 0px 1px 3px rgba(25, 30, 30, 0.08);
+            border-radius: 4px;
+            border: 1px solid #fff;
+            background: #fff;
+            margin: 0 15px;
+            padding: 40px;
+
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                padding: 20px;
+                margin: 0 0 20px;
+            }
+
+            &:hover {
+                border: 1px solid $green;
+            }
+
+            &-date {
+                font-size: 10px;
+                line-height: 120%;
+                color: #919497;
+                margin-bottom: 16px;
+            }
+
+            &-title {
+                font-size: 24px;
+                line-height: 120%;
+                font-weight: 600;
+                color: #333333;
+                margin-bottom: 16px;
+                @media screen and (max-width: 991px) {
+                    font-size: 18px;
+                }
+            }
+
+            &-text {
+                font-size: 14px;
+                line-height: 140%;
+                margin-bottom: 24px;
+            }
+
+            &-btn {
+                font-size: 16px;
+                line-height: 1;
+                padding: 10px 30px;
+                margin-top: auto;
+            }
+        }
+    }
+}
